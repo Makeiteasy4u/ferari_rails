@@ -1,0 +1,25 @@
+<h1>INDEX page action</h1>
+<%= link_to'Create a new post', new_post_path(@post) %>
+<table>
+  <tr>
+    <td>Title</td>
+
+    <td>Description</td>
+  </tr>
+
+  <% @posts.each do |posts| %>
+  <tr>
+    <td><%= posts.title %></td>
+
+    <td><%= posts.description %></td>
+    <td><%= link_to'edit', edit_post_path(posts) %></td>
+    <td><%= link_to'show', post_path(posts) %></td>
+    <td><%= link_to'delete', post_path(posts), method: :delete, data: {confirm: 'Are you sure ??'} %></td>
+  </tr>
+
+ <% end %>
+</table>
+
+<p>
+  <%= link_to'Back to Home page', root_path %>
+</p>
