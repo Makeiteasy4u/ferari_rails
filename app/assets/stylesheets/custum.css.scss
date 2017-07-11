@@ -20,3 +20,56 @@ $navbar-default-bg: #08088A;
 .center{
   text-align: center;
 }
+
+//styling Home page (jumbotron & button)
+
+.jumbotron{
+
+  background-image: asset_url('electrical-2476783_1920.jpg');
+  background-size: cover;
+  height:500px;
+  background-repeat: no-repeat;
+  letter-spacing: -1px;
+  
+}
+.jumbotron h1{
+
+  color: #ffffff;
+  letter-spacing: -1px;
+  
+}
+
+//styling button jumbotron
+.btn-xlarge{
+  background-color: red;
+  font-size: 1.7em;
+  margin-top: 100px;
+}
+
+.btn-primary:hover{
+  background-color: green;
+}
+.footer ul{
+  float: right;
+  list-style: none;
+}
+
+//styling footer
+.footer{
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid black;
+
+}
+
+.footer a:hover{
+  color: #222;
+}
+
+.footer small{
+  float: left;
+}
+footer ul li{
+  float: left;
+  margin-left: 15px;
+}
